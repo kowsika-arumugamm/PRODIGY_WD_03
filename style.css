@@ -1,0 +1,60 @@
+body {
+  color: black;
+  background-color: rgb(92, 18, 182); 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#status-message {
+  margin-top: 20px;
+}
+
+#reset-button {
+  margin-top: 20px;
+  background-color: white; 
+  border: none;
+  padding: 10px 20px; 
+  font-size: 1rem;
+  cursor: pointer; 
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; 
+}
+
+.cell.x::after {
+  content: "X";
+  color: blue;
+}
+
+.cell.o::after {
+  content: "O";
+  color: red; 
+}
